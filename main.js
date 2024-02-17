@@ -38,7 +38,7 @@ function addTask(){
     }
     taskList.push(task)
     console.log(taskList)
-    render()
+    filter()
 }
 function render(){
     let list = [];
@@ -98,7 +98,12 @@ function remove(){
 }
 
 function filter(event){
+    if(event){
     mode = event.target.id;
+    console.log(event)
+    console.log(event.target)
+    console.log(mode)
+    }
     if(mode === "all"){
         render();
         document.getElementById("under-line").style.width = "60px";
@@ -135,7 +140,7 @@ function deleteTask(id){
         }
     }
     console.log(taskList)
-    render()
+    filter()
     
 
 }
