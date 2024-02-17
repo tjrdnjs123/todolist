@@ -85,7 +85,7 @@ function toggleComplete(id){
         
     }
     console.log(taskList)
-    render() 
+    filter() 
     
 }
 
